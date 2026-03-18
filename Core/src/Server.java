@@ -18,7 +18,6 @@ public class Server {
 
     public void start()throws Exception{
         Selector sl = Selector.open();
-
         ServerSocketChannel server = ServerSocketChannel.open();
         server.configureBlocking(false);
         server.bind(new InetSocketAddress(port));
